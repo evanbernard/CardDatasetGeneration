@@ -55,8 +55,8 @@ def main():
     cv2.waitKey(0)
 
     if EXPORT:
-        cv2.imwrite(newFolder + "\\" + cardName + imExtension, result)
-        print("Added cropped file " + cardName + imExtension + " to the " + newFolder + " folder.")
+        cv2.imwrite(cardFolder + "\\" + cardName + imExtension, result)
+        print("Added cropped file " + cardName + imExtension + " to the " + cardFolder + " folder.")
 
 
 # crop_image(img_copy, p1, p2) takes an image and two points and returns the image found between p1 and p2

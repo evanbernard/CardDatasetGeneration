@@ -9,7 +9,7 @@ import random
 
 imFolder = "Cards"
 imExtension = ".jpg"
-newFolder = "CroppedCards"
+cardFolder = "CroppedCards"
 
 bgLocation = "Z:\\ML_Images\\Background_Dataset\\Images\\"
 bgPickleLoc = "Z:\\ML_Images\\Background_Dataset\\BGPickle"

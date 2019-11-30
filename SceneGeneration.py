@@ -39,7 +39,7 @@ class Scene:
         # We are left with an image with black borders of size old_width/2 because of the resizing, so lets grab the
         #   middle of the image to crop the black off
         new_bg = new_bg[int((new_bg.shape[0] - old_width)/2):int((new_bg.shape[0] + old_width)/2),
-                 int((new_bg.shape[1] - old_height)/2):int((new_bg.shape[1] + old_height)/2)]
+                        int((new_bg.shape[1] - old_height)/2):int((new_bg.shape[1] + old_height)/2)]
 
         cv2.imshow("rotated card", new_bg)
         cv2.waitKey(0)

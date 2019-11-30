@@ -1,7 +1,0 @@
-*.pyc
-*.swp
-*.swo
-__pycache__/
-.idea/
-Lib/
-*.cfg

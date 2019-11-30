@@ -4,7 +4,7 @@ from CardImages import Cards
 from CardExtractor import rotate_bound
 
 
-#change
+#chang
 class Scene:
     def __init__(self):
         self.bg_images = Backgrounds()

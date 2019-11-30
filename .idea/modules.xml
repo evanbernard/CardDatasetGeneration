@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PlayingCard_Dataset_Generation.iml" filepath="$PROJECT_DIR$/.idea/PlayingCard_Dataset_Generation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PlayingCardDataset.iml" filepath="$PROJECT_DIR$/.idea/PlayingCardDataset.iml" />
     </modules>
   </component>
 </project>

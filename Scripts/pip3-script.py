@@ -1,4 +1,4 @@
-#!Z:\PycharmProjects\PlayingCard_Dataset_Generation\Scripts\python.exe
+#!Z:\PycharmProjects\PlayingCardDataset\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip3'
 __requires__ = 'pip==19.0.3'
 import re

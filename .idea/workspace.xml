@@ -1,11 +1,667 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="995ba2e1-35a7-4489-bc3e-1967280bb239" name="Default Changelist" comment="adjusted range">
+    <list default="true" id="ac8500a6-c048-4744-be93-72c4c24a595c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PlayingCard_Dataset_Generation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackgroundImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/BackgroundImages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CardImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/CardImages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SceneGeneration.py" beforeDir="false" afterPath="$PROJECT_DIR$/SceneGeneration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/BdfFontFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/BlpImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/BmpImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/BufrStubImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ContainerIO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/CurImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/DcxImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/DdsImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/EpsImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ExifTags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/FitsStubImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/FliImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/FontFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/FpxImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/FtexImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/GbrImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/GdImageFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/GifImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/GimpGradientFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/GimpPaletteFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/GribStubImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/Hdf5StubImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/IcnsImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/IcoImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/Image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageChops.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageCms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageColor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageDraw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageDraw2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageEnhance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageFilter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageFont.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageGrab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageMath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageMode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageMorph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageOps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImagePalette.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImagePath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageQt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageSequence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageShow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageStat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageTk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageTransform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImageWin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/ImtImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/IptcImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/Jpeg2KImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/JpegImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/JpegPresets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/McIdasImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/MicImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/MpegImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/MpoImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/MspImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PSDraw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PaletteFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PalmImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PcdImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PcfFontFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PcxImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PdfImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PdfParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PixarImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PngImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PpmImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PsdImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/PyAccess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/SgiImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/SpiderImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/SunImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/TarIO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/TgaImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/TiffImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/TiffTags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/WalImageFile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/WebPImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/WmfImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/XVThumbImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/XbmImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/XpmImagePlugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_binary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_imaging.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_imagingcms.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_imagingft.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_imagingmath.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_imagingmorph.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_imagingtk.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_tkinter_finder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/_webp.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/PIL/features.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/Pillow-6.2.1.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cv2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/cv2/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cv2/data/haarcascade_licence_plate_rus_16stages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/cv2/data/haarcascade_licence_plate_rus_16stages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler-0.10.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/cycler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/easter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/parser/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/parser/_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/parser/isoparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/relativedelta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/rrule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/tz/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/tz/_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/tz/_factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/tz/tz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/tz/win.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/tzwin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/dateutil/zoneinfo/rebuild.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/easy-install.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/imutils-0.5.3-py3.7.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/imutils-0.5.3-py3.7.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/imutils-0.5.3-py3.7.egg-info/installed-files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/imutils-0.5.3-py3.7.egg-info/installed-files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver-1.1.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/kiwisolver.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2-py3.7-nspkg.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2.dist-info/namespace_packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib-3.1.2.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_animation_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_cm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_cm_listed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_color_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_constrained_layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_contour.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_image.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_layoutbox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_mathtext_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_path.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_png.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_pylab_helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_qhull.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_tri.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/afm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/animation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/artist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/axes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/axes/_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/axes/_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/axes/_secondary_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/axes/_subplots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/axis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backend_bases.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backend_managers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backend_tools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/_backend_agg.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/_backend_pdf_ps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/_backend_tk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/_tkagg.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_agg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_cairo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_gtk3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_gtk3agg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_gtk3cairo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_macosx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_mixed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_nbagg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_pdf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_pgf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_ps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_qt4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_qt4agg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_qt4cairo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_qt5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_qt5agg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_qt5cairo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_svg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_tkagg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_tkcairo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_webagg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_webagg_core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_wx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_wxagg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/backend_wxcairo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/qt_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/qt_editor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/qt_editor/_formlayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/qt_editor/figureoptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/qt_editor/formlayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/qt_editor/formsubplottool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/tkagg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/all_figures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/css/boilerplate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/css/fbm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/css/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/ipython_inline_figure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/AUTHORS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/external/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/jquery-ui.theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery-ui-1.12.1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/jquery/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/js/mpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/js/mpl_tornado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/js/nbagg_mpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/nbagg_uat.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/web_backend/single_figure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/windowing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/backends/wx_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/bezier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/blocking_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/cbook/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/cbook/deprecation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/cm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/colorbar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/colors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/compat/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/compat/subprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/concrt140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/container.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/contour.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/dates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/docstring.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/dviread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/figure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/font_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/fontconfig_pattern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/ft2font.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/gridspec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/hatch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/legend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/legend_handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/lines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mathtext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mlab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/cmex10.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/cmmi10.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/cmr10.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/cmsy10.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/cmtt10.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pagd8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pagdo8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pagk8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pagko8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pbkd8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pbkdi8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pbkl8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pbkli8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pcrb8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pcrbo8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pcrr8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pcrro8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvb8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvb8an.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvbo8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvbo8an.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvl8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvlo8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvr8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvr8an.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvro8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/phvro8an.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pncb8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pncbi8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pncr8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pncri8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pplb8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pplbi8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pplr8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pplri8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/psyr.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/ptmb8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/ptmbi8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/ptmr8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/ptmri8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/putb8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/putbi8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/putr8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/putri8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pzcmi8a.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/afm/pzdr.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Bold.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier-BoldOblique.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Oblique.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Bold.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-BoldOblique.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Oblique.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Symbol.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-Bold.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-BoldItalic.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-Italic.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-Roman.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/ZapfDingbats.afm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/LICENSE_STIX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/back.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/back.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/back.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/back_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/back_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/filesave.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/filesave.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/filesave.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/filesave_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/filesave_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/forward.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/forward.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/forward_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/forward_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/hand.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/hand.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/hand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/hand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/hand_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/help.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/help.ppm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/help.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/help_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/help_large.ppm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/home.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/home.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/home_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/home_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/matplotlib.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/matplotlib.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/matplotlib.ppm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/matplotlib.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/matplotlib_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/move.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/move.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/move.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/move_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/move_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/qt4_editor_options.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/qt4_editor_options.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/qt4_editor_options.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/qt4_editor_options_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/subplots.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/subplots.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/subplots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/subplots.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/subplots_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/subplots_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/zoom_to_rect.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/zoom_to_rect.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/zoom_to_rect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/zoom_to_rect.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/zoom_to_rect_large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/images/zoom_to_rect_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/matplotlibrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/Minduka_Present_Blue_Pack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/None_vs_nearest-pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/aapl.npz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/ada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/axes_grid/bivariate_normal.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/ct.raw.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/data_x_x2_x3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/demodata.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/eeg.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/embedding_in_wx3.xrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/goog.npz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/grace_hopper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/grace_hopper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/jacksboro_fault_dem.npz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/membrane.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/msft.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/percent_bachelors_degrees_women_usa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/s1045.ima.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/sample_data/topobathy.npz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/Solarize_Light2.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/_classic_test.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/bmh.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/dark_background.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/fast.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/fivethirtyeight.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/ggplot.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/grayscale.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-bright.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-colorblind.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-dark-palette.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-dark.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-darkgrid.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-deep.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-muted.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-notebook.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-paper.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-pastel.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-poster.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-talk.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-ticks.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-white.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn-whitegrid.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/seaborn.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/mpl-data/stylelib/tableau-colorblind10.mplstyle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/msvcp140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/offsetbox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/patches.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/patheffects.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/projections/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/projections/geo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/projections/polar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/pylab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/pyplot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/quiver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/rcsetup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/sankey.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/scale.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/sphinxext/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/sphinxext/mathmpl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/sphinxext/plot_directive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/spines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/stackplot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/streamplot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/style/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/style/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/compare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/decorators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/determinism.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/disable_internet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/Duration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/Epoch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/EpochConverter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/StrConverter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/UnitDbl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/UnitDblConverter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/UnitDblFormatter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/testing/jpl_units/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/texmanager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/textpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/ticker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tight_bbox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tight_layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/transforms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/triangulation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/tricontour.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/trifinder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/triinterpolate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/tripcolor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/triplot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/trirefine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/tri/tritools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/ttconv.cp37-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/type1font.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/units.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/matplotlib/widgets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/anchored_artists.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/angle_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axes_divider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axes_grid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axes_rgb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axes_size.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axis_artist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axisline_style.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/axislines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/clip_path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/colorbar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/floating_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/grid_finder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/grid_helper_curvelinear.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/inset_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid/parasite_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/anchored_artists.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/axes_divider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/axes_grid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/axes_rgb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/axes_size.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/colorbar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/inset_locator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/mpl_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axes_grid1/parasite_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/angle_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/axes_divider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/axes_grid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/axes_rgb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/axis_artist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/axisline_style.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/axislines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/clip_path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/floating_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/grid_finder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/grid_helper_curvelinear.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/axisartist/parasite_axes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/mplot3d/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/mplot3d/art3d.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/mplot3d/axes3d.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/mplot3d/axis3d.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/mpl_toolkits/mplot3d/proj3d.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy-1.17.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy-1.17.4.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy-1.17.4.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy-1.17.4.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/__config__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/__config__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/_distributor_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/_distributor_init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/__multiarray_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/__multiarray_api.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/__ufunc_api.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/__ufunc_api.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/_numpyconfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/_numpyconfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/multiarray_api.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/multiarray_api.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/ufunc_api.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/include/numpy/ufunc_api.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/core/lib/npy-pkg-config/npymath.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/core/lib/npy-pkg-config/npymath.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/distutils/__config__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/distutils/__config__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/numpy/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/numpy/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/opencv_python-4.1.2.30.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/opencv_python-4.1.2.30.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/opencv_python-4.1.2.30.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/opencv_python-4.1.2.30.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pickle_mixin-1.0.2-py3.7.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pickle_mixin-1.0.2-py3.7.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pickle_mixin-1.0.2-py3.7.egg-info/installed-files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pickle_mixin-1.0.2-py3.7.egg-info/installed-files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pip-19.0.3-py3.7.egg/EGG-INFO/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/pip-19.0.3-py3.7.egg/EGG-INFO/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pylab.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing-2.4.5.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/python_dateutil-2.8.1.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools-40.8.0-py3.7.egg" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools-40.8.0-py3.7.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six-1.13.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six-1.13.0.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six-1.13.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six-1.13.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six-1.13.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six-1.13.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Activate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/deactivate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/easy_install-3.7-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/easy_install-3.7-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/easy_install-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/easy_install-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/f2py.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/f2py.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/pip-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pip-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/pip3-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pip3-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/pip3.7-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/pip3.7-script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/range-detector" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/range-detector" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,21 +670,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CardExtractor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="138" column="35" lean-forward="true" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+            <state relative-caret-position="100">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CardImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="-275">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -36,17 +692,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BackgroundImages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-            </state>
+            <state relative-caret-position="-404" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SceneGeneration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="196">
+              <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -57,62 +711,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/name_fix.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="150">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>resize</find>
-      <find>theta</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/testing.py" />
-        <option value="$PROJECT_DIR$/find_extremes.py" />
-        <option value="$PROJECT_DIR$/name_fix.py" />
-        <option value="$PROJECT_DIR$/../PlayingCard-Dataset-cardExractorDevelopment/CardExtractor.py" />
-        <option value="$PROJECT_DIR$/constants.py" />
-        <option value="$PROJECT_DIR$/BackgroundPickle.py" />
-        <option value="$PROJECT_DIR$/GenerateData.py" />
-        <option value="$PROJECT_DIR$/Constants.py" />
-        <option value="$PROJECT_DIR$/SceneGeneration" />
-        <option value="$PROJECT_DIR$/CardImages.py" />
-        <option value="$PROJECT_DIR$/CardExtractor.py" />
-        <option value="$PROJECT_DIR$/BackgroundImages.py" />
-        <option value="$PROJECT_DIR$/SceneGeneration.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="438" />
     <option name="y" value="-17" />
     <option name="width" value="974" />
@@ -124,23 +734,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PlayingCard_Dataset_Generation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlayingCard_Dataset_Generation" type="462c0819:PsiDirectoryNode" />
+              <item name="PlayingCardDataset" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlayingCardDataset" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -155,8 +764,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.SceneGeneration">
-    <configuration name="BackgroundPickle" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PlayingCard_Dataset_Generation" />
+    <configuration name="BackgroundImages" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PlayingCardDataset" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -167,7 +776,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="Z:\PycharmProjects\PlayingCard_Dataset_Generation\BackgroundImages.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BackgroundImages.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,7 +786,7 @@
       <method v="2" />
     </configuration>
     <configuration name="CardExtractor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PlayingCard_Dataset_Generation" />
+      <module name="PlayingCardDataset" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -198,7 +807,7 @@
       <method v="2" />
     </configuration>
     <configuration name="CardImages" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PlayingCard_Dataset_Generation" />
+      <module name="PlayingCardDataset" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -218,29 +827,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GenerateData" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PlayingCard_Dataset_Generation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="Z:\PycharmProjects\PlayingCard_Dataset_Generation\CardImages.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="SceneGeneration" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PlayingCard_Dataset_Generation" />
+      <module name="PlayingCardDataset" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -263,9 +851,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.SceneGeneration" />
+        <item itemvalue="Python.BackgroundImages" />
         <item itemvalue="Python.CardImages" />
-        <item itemvalue="Python.BackgroundPickle" />
-        <item itemvalue="Python.GenerateData" />
         <item itemvalue="Python.CardExtractor" />
       </list>
     </recent_temporary>
@@ -275,160 +862,78 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="995ba2e1-35a7-4489-bc3e-1967280bb239" name="Default Changelist" comment="" />
-      <created>1574615603612</created>
+      <changelist id="ac8500a6-c048-4744-be93-72c4c24a595c" name="Default Changelist" comment="" />
+      <created>1575092444709</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574615603612</updated>
+      <updated>1575092444709</updated>
     </task>
-    <task id="LOCAL-00001" summary="adjusted range">
-      <created>1574635346256</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1574635346256</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16491044" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjusted range" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted range" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/0.jpg" />
-    <entry file="file://$PROJECT_DIR$/NewCards/0.jpg" />
-    <entry file="file://$PROJECT_DIR$/im_out.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/ace.jpg" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing.py" />
-    <entry file="file://$PROJECT_DIR$/find_extremes.py" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[C0]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[C2]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[C3]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[C4]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[C5]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[CQ]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/cards-[H9]-003.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/C0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cards/SQ.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cards/C9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CroppedCards/C9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cards/CA.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CroppedCards/CA.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CroppedCards/C0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cards/C2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PlayingCard-Dataset-cardExractorDevelopment/CardExtractor.py" />
-    <entry file="file://$PROJECT_DIR$/CroppedCards/new3.jpg" />
-    <entry file="file://$PROJECT_DIR$/Cards/new1.jpg" />
-    <entry file="file://$PROJECT_DIR$/bg_temp/temp" />
-    <entry file="file://$PROJECT_DIR$/CroppedCards/C0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardPickle" />
-    <entry file="file://$PROJECT_DIR$/name_fix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CardExtractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="138" column="35" lean-forward="true" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SceneGeneration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackgroundImages.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CardImages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="-275">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackgroundImages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SceneGeneration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

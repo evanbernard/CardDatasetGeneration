@@ -18,7 +18,6 @@ class Backgrounds:
         return bg
 
 
-
 # create_pickle() creates a pickle file of all of the background images found in
 #   the file location bgLocation (found in Constants.py)
 def create_pickle():
@@ -30,7 +29,7 @@ def create_pickle():
     #   grab all the .jpgs
     for subdir in glob(bgLocation+"/*"):
         for f in glob(subdir+"/*.jpg"):
-            bg_images.append(mpimg.imread(f))
+            bg_images.append(cv2.imread(f))
     print("Number of images loaded :", len(bg_images))
     print("Saved in :", save_name)
     pickle.dump(bg_images, open(save_name, 'wb'))

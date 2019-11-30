@@ -25,7 +25,7 @@ def create_pickle():
     card_images = []
     # We just need to parse through each
     for f in glob(cardLocation+"/*.jpg"):
-        card_images.append(mpimg.imread(f))
+        card_images.append(cv2.imread(f))
     print("Number of images loaded :", len(card_images))
     print("Saved in :", save_name)
     pickle.dump(card_images, open(save_name, 'wb'))

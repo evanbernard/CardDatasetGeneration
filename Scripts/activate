@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="Z:\PycharmProjects\PlayingCard_Dataset_Generation"
+VIRTUAL_ENV="Z:\PycharmProjects\PlayingCardDataset"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,8 +54,8 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    if [ "x(PlayingCard_Dataset_Generation) " != x ] ; then
-	PS1="(PlayingCard_Dataset_Generation) ${PS1:-}"
+    if [ "x(PlayingCardDataset) " != x ] ; then
+	PS1="(PlayingCardDataset) ${PS1:-}"
     else
     if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
         # special case for Aspen magic directories

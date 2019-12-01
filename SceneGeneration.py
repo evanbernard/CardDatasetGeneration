@@ -2,6 +2,7 @@ from Constants import *
 from BackgroundImages import Backgrounds
 from CardImages import Cards
 from CardExtractor import rotate_bound
+from XMLParser import find_boxes
 
 
 class Scene:
@@ -15,7 +16,7 @@ class Scene:
         new_bg = self.bg_images.get_random()
 
         # Our backgrounds are a little small, so apply a random resize
-        random_size = random.uniform(1, 2)
+        random_size = random.uniform(1.5, 4)
         new_bg = cv2.resize(new_bg, (int(new_bg.shape[1]*random_size), int(new_bg.shape[0]*random_size)))
         # We will be resizing multiple times so we need to save our starting width and height so we know what size
         #   it should be at the end
@@ -24,32 +25,69 @@ class Scene:
 
         card, card_name = self.card_images.get_random()
         angle = random.randint(0, 360)
-
+        brightness = random.randint(-50, 50)
+        contrast = random.randint(-50, 50)
+        card = increase_brightness(card, contrast, brightness)
         # Note: if we were to rotate the card first then put it on the background we would have had either a cropped
         #   card or a card with black corners, which is no good, so we took the approach of rotating the bg instead
         # We first rotate the background by a random angle, note that rotate_bound will resize the image to make sure
         #   that the image doesn't get cropped at all (ie, it is sized up so that the corners aren't cut off)
         new_bg = rotate_bound(new_bg, angle, [])
         # Now that we have our rotated background, we can place a card vertically on that background
-        new_bg, _ = place_card(card, new_bg, None)
+        new_bg, cords = place_card(card, new_bg, None)
+
+        bounding = find_boxes(card_name)
+        xmin0, ymin0 = bounding[0]['xmin'] + cords[0], bounding[0]['ymin'] + cords[1]
+        xmax0, ymax0 = bounding[0]['xmax'] + cords[0], bounding[0]['ymax'] + cords[1]
+        xmin1, ymin1 = bounding[1]['xmin'] + cords[0], bounding[1]['ymin'] + cords[1]
+        xmax1, ymax1 = bounding[1]['xmax'] + cords[0], bounding[1]['ymax'] + cords[1]
 
         # Now we need to rotate the background back to the original position so we have effectively rotated the card
         #   on the background
+        pnts = rotate_bound(new_bg, -angle, [[xmin0, ymin0], [xmax0, ymax0], [xmin0, ymax0], [xmax0, ymin0],
+                                             [xmin1, ymin1], [xmax1, ymax1], [xmin1, ymax1], [xmax1, ymin1]])
         new_bg = rotate_bound(new_bg, -angle, [])
+
+        pnts = np.around(pnts.astype(int)).tolist()
+
+        for i in range(len(pnts)):
+            pnts[i][0] -= int((new_bg.shape[1] - old_height)/2)
+            pnts[i][1] -= int((new_bg.shape[0] - old_width)/2)
 
         # We are left with an image with black borders of size old_width/2 because of the resizing, so lets grab the
         #   middle of the image to crop the black off
         new_bg = new_bg[int((new_bg.shape[0] - old_width)/2):int((new_bg.shape[0] + old_width)/2),
                         int((new_bg.shape[1] - old_height)/2):int((new_bg.shape[1] + old_height)/2)]
 
-        cv2.imshow("rotated card", new_bg)
+        xmin0 = min(pnts[i][0] for i in range(4))
+        ymin0 = min(pnts[i][1] for i in range(4))
+        xmax0 = max(pnts[i][0] for i in range(4))
+        ymax0 = max(pnts[i][1] for i in range(4))
+
+        xmin1 = min(pnts[i][0] for i in range(4, 8))
+        ymin1 = min(pnts[i][1] for i in range(4, 8))
+        xmax1 = max(pnts[i][0] for i in range(4, 8))
+        ymax1 = max(pnts[i][1] for i in range(4, 8))
+
+        cv2.circle(new_bg, (xmin0, ymin0), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmin0, ymax0), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax0, ymin0), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax0, ymax0), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmin1, ymin1), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmin1, ymax1), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax1, ymin1), 5, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax1, ymax1), 5, (255, 0, 255), -1)
+        new_bg = cv2.resize(new_bg, (int(new_bg.shape[1] * 2 / REDUCE), int(new_bg.shape[0] * 2 / REDUCE)))
+
+        cv2.imshow("Single Scene", new_bg)
         cv2.waitKey(0)
 
     def create_double_card(self):
         new_bg = self.bg_images.get_random()
+
         # cv2.imshow("orig", new_bg)
         # Our backgrounds are a little small, so apply a random resize
-        random_size = random.uniform(1, 2)
+        random_size = random.uniform(1.5, 4)
         new_bg = cv2.resize(new_bg, (int(new_bg.shape[1] * random_size), int(new_bg.shape[0] * random_size)))
         # We will be resizing multiple times so we need to save our starting width and height so we know what size
         #   it should be at the end
@@ -58,6 +96,15 @@ class Scene:
 
         card1, card1_name = self.card_images.get_random()
         card2, card2_name = self.card_images.get_random()
+
+        brightness1 = random.randint(-50, 50)
+        contrast1 = random.randint(-50, 50)
+        brightness2 = random.randint(-50, 50)
+        contrast2 = random.randint(-50, 50)
+
+        card1 = increase_brightness(card1, contrast1, brightness1)
+        card2 = increase_brightness(card2, contrast2, brightness2)
+
         angle = random.randint(0, 360)
 
         # Note: if we were to rotate the card first then put it on the background we would have had either a cropped
@@ -79,11 +126,9 @@ class Scene:
         new_bg = new_bg[int((new_bg.shape[0] - old_width) / 2):int((new_bg.shape[0] + old_width) / 2),
                         int((new_bg.shape[1] - old_height) / 2):int((new_bg.shape[1] + old_height) / 2)]
 
-        cv2.imshow("rotated card", new_bg)
+        new_bg = cv2.resize(new_bg, (int(new_bg.shape[1]*2/REDUCE),int(new_bg.shape[0]*2/REDUCE)))
+        cv2.imshow("Double Scene", new_bg)
         cv2.waitKey(0)
-
-    def create_triple_card(self):
-        pass
 
 
 # Places the img onto the bigger image bg, in a random x,y coordinate
@@ -101,10 +146,18 @@ def place_card(img, bg, cords):
     return bg, (x_card, y_card)
 
 
+def increase_brightness(img, contrast=0, brightness=0):
+    img = np.int16(img)
+    img = img * (contrast / 127 + 1) - contrast + brightness
+    img = np.clip(img, 0, 255)
+    img = np.uint8(img)
+    return img
+
+
 def main():
-    newScene = Scene()
+    new_scene = Scene()
     while True:
-        newScene.create_double_card()
+        new_scene.create_single_card()
 
 
 if __name__ == "__main__":

@@ -7,7 +7,6 @@ class Backgrounds:
     def __init__(self):
         self.images = pickle.load(open(bgPickleLoc, 'rb'))
         self.nb_images = len(self.images)
-        # print("Number of backgrounds loaded :", self.nb_images)
 
     # get_random will return the random background found in the bg pickle and display it if True is passed
     def get_random(self, display=False):
@@ -21,7 +20,6 @@ class Backgrounds:
 # create_pickle() creates a pickle file of all of the background images found in
 #   the file location bgLocation (found in Constants.py)
 def create_pickle():
-    save_name = "BGPickle"
     # All images will be temporarily stored in bg_images
     bg_images = []
     # The folder is full of folders classifying the images,
@@ -31,12 +29,12 @@ def create_pickle():
         for f in glob(subdir+"/*.jpg"):
             bg_images.append(cv2.imread(f))
     print("Number of images loaded :", len(bg_images))
-    print("Saved in :", save_name)
-    pickle.dump(bg_images, open(save_name, 'wb'))
+    print("Saved in :", bgPickleLoc)
+    pickle.dump(bg_images, open(bgPickleLoc, 'wb'))
 
 
 if __name__ == "__main__":
-    # create_pickle()
+    #create_pickle()
     backgrounds = Backgrounds()
     while True:
         backgrounds.get_random(display=True)

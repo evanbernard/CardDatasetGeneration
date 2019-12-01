@@ -21,7 +21,7 @@ class Cards:
 #   the card image
 def create_pickle():
     cards_dict = {}
-    save_name = "cardPickle"
+    # save_name = "cardPickle"
     # All images will be temporarily stored in card_images
     # We just need to parse through each
     for f in glob(cardLocation+"/*.jpg"):
@@ -30,12 +30,12 @@ def create_pickle():
         # Save the name of the card as a key with the value of the image
         cards_dict[card_name] = cv2.imread(f)
     print("Number of images loaded :", len(cards_dict))
-    print("Saved in :", save_name)
-    pickle.dump(cards_dict, open(save_name, 'wb'))
+    print("Saved in :", cardPickleLoc)
+    pickle.dump(cards_dict, open(cardPickleLoc, 'wb'))
 
 
 if __name__ == "__main__":
-    # create_pickle()
+    create_pickle()
     cards = Cards()
-    while True:
-        cards.get_random(display=True)
+    # while True:
+    #    cards.get_random(display=True)

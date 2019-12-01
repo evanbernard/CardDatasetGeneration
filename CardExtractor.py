@@ -1,4 +1,5 @@
 from Constants import *
+#from XMLParser import find_boxes
 
 
 def main():
@@ -25,6 +26,7 @@ def main():
     # We need to rotate the box until it is straight, so we need to calculate theta; the angle of rotation
     theta = find_theta(box)
     # Next we perform the rotation on the corner points (the box)
+    #print(box)
     box = rotate_bound(img_copy, theta, box)
     # Then we perform the rotation on the image
     img_copy = rotate_bound(img_copy, theta, [])
@@ -48,6 +50,15 @@ def main():
     # Resize the other images
     img_copy = cv2.resize(img_copy, (nwidth, nheight))
     orig = cv2.resize(img, (width, height))
+
+    # We want the final size to be 300x420 so each card is consistent
+    result = cv2.resize(result, IM_SIZE)
+
+    #bounding = find_boxes(cardName)
+    #cv2.circle(result, (bounding[0]['xmin'], bounding[0]['ymin']), 2, (255, 0, 255), -1)
+    #cv2.circle(result, (bounding[0]['xmax'], bounding[0]['ymax']), 2, (255, 0, 255), -1)
+
+
 
     if SHOW_DETAILS:
         cv2.imshow("Original", orig)

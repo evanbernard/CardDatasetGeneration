@@ -10,6 +10,7 @@ def main():
     # c is the largest area contour in the image
     c = find_largest_contour(img)
     # find the minimum bounding rectangle for the biggest contour
+
     rect = cv2.minAreaRect(c)
     box = cv2.boxPoints(rect)
     box = np.int0(box)
@@ -30,6 +31,7 @@ def main():
 
     # Our box is a numpy array of floats so we need to typecast to ints to make the points usable
     box = np.around(box.astype(int)).tolist()
+
     # Our new width and height for the image copy after we rotate it
     # The width and height need to be changed when rotating, otherwise the corners may be cropped after rotation
     nheight = int(img_copy.shape[0] / REDUCE)
@@ -51,8 +53,9 @@ def main():
         cv2.imshow("Original", orig)
         cv2.imshow("Contours and Rotation", img_copy)
 
-    cv2.imshow("Result", result)
-    cv2.waitKey(0)
+    if SHOW_IM:
+        cv2.imshow("Result", result)
+        cv2.waitKey(0)
 
     if EXPORT:
         cv2.imwrite(cardFolder + "\\" + cardName + imExtension, result)
@@ -154,6 +157,18 @@ def rotate_bound(image, angle, points):
 
 
 if __name__ == "__main__":
+    if TESTING_EXTRACT:
+        SHOW_IM = True
+        SHOW_CONTOURS = True
+        SHOW_DETAILS = True
+        ALL_CARDS = True
+    elif EXPORT_EXTRACT:
+        SHOW_IM = False
+        SHOW_CONTOURS = False
+        SHOW_DETAILS = False
+        ALL_CARDS = True
+        EXPORT = True
+
     if ALL_CARDS:
         for im in os.listdir(imFolder):
             # This assumes the name of the cards are in the format {suit}{value}

@@ -13,7 +13,7 @@ class Scene:
         # TODO when rotating the labels make sure you check to see if they're off the image
         #   if the are, then dont include that image in the training data
         new_bg = self.bg_images.get_random()
-        #cv2.imshow("orig", new_bg)
+
         # Our backgrounds are a little small, so apply a random resize
         random_size = random.uniform(1, 2)
         new_bg = cv2.resize(new_bg, (int(new_bg.shape[1]*random_size), int(new_bg.shape[0]*random_size)))
@@ -31,7 +31,7 @@ class Scene:
         #   that the image doesn't get cropped at all (ie, it is sized up so that the corners aren't cut off)
         new_bg = rotate_bound(new_bg, angle, [])
         # Now that we have our rotated background, we can place a card vertically on that background
-        new_bg = place_card(card, new_bg)
+        new_bg, _ = place_card(card, new_bg, None)
 
         # Now we need to rotate the background back to the original position so we have effectively rotated the card
         #   on the background
@@ -66,10 +66,10 @@ class Scene:
         #   that the image doesn't get cropped at all (ie, it is sized up so that the corners aren't cut off)
         new_bg = rotate_bound(new_bg, angle, [])
         # Now that we have our rotated background, we can place a card vertically on that background
-        new_bg = place_card(card1, new_bg)
-        small_angle = random.randint(-10, 10)
+        new_bg, cords = place_card(card1, new_bg, None)
+        small_angle = random.randint(-15, 15)
         new_bg = rotate_bound(new_bg, small_angle, [])
-        new_bg = place_card(card2, new_bg)
+        new_bg, _ = place_card(card2, new_bg, cords)
         # Now we need to rotate the background back to the original position so we have effectively rotated the card
         #   on the background
         new_bg = rotate_bound(new_bg, -(angle + small_angle), [])
@@ -87,15 +87,18 @@ class Scene:
 
 
 # Places the img onto the bigger image bg, in a random x,y coordinate
-def place_card(img, bg):
+def place_card(img, bg, cords):
     height = bg.shape[0]
     width = bg.shape[1]
-    # Generate random coordinates
-    x_card = random.randint(0, width - img.shape[1])
-    y_card = random.randint(0, height - img.shape[0])
+    if cords is None:
+        # Generate random coordinates
+        x_card = random.randint(0, width - img.shape[1])
+        y_card = random.randint(0, height - img.shape[0])
+    else:
+        x_card, y_card = cords[:2]
     # Fill the bg rectangle created by the x,y coordinates with the img
     bg[y_card:y_card+img.shape[0], x_card:x_card+img.shape[1]] = img
-    return bg
+    return bg, (x_card, y_card)
 
 
 def main():

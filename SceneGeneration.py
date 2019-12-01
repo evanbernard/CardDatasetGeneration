@@ -23,61 +23,71 @@ class Scene:
         old_width = new_bg.shape[0]
         old_height = new_bg.shape[1]
 
+        # Picks a random card, applies random brightness and contrast changes and returns the image in card and the
+        #   image name in card_name
         card, card_name = self.card_images.get_random()
+
+        # We need to randomly rotate the card on the background, so randomize the angle
         angle = random.randint(0, 360)
-        brightness = random.randint(-50, 50)
-        contrast = random.randint(-50, 50)
-        card = increase_brightness(card, contrast, brightness)
+
         # Note: if we were to rotate the card first then put it on the background we would have had either a cropped
-        #   card or a card with black corners, which is no good, so we took the approach of rotating the bg instead
+        #   card or a card with black corners, which is no good, so we rotate the background instead
         # We first rotate the background by a random angle, note that rotate_bound will resize the image to make sure
         #   that the image doesn't get cropped at all (ie, it is sized up so that the corners aren't cut off)
         new_bg = rotate_bound(new_bg, angle, [])
-        # Now that we have our rotated background, we can place a card vertically on that background
+        # Now that we have our rotated background, we can place a card vertically on that background with random
+        #   coordinates, and return the new rotated background new_bg and the x,y location of the card position cords
+        #   location
         new_bg, cords = place_card(card, new_bg, None)
 
+        # We parse the xml file for the card chosen, to get an array of dictionaries, with each dict storing the cords
         bounding = find_boxes(card_name)
+        # We extract the x and y min and max of the coordinates of the label
         xmin0, ymin0 = bounding[0]['xmin'] + cords[0], bounding[0]['ymin'] + cords[1]
         xmax0, ymax0 = bounding[0]['xmax'] + cords[0], bounding[0]['ymax'] + cords[1]
         xmin1, ymin1 = bounding[1]['xmin'] + cords[0], bounding[1]['ymin'] + cords[1]
         xmax1, ymax1 = bounding[1]['xmax'] + cords[0], bounding[1]['ymax'] + cords[1]
 
         # Now we need to rotate the background back to the original position so we have effectively rotated the card
-        #   on the background
+        #   on the background, but we need to apply this rotation first to the coordinates
         pnts = rotate_bound(new_bg, -angle, [[xmin0, ymin0], [xmax0, ymax0], [xmin0, ymax0], [xmax0, ymin0],
                                              [xmin1, ymin1], [xmax1, ymax1], [xmin1, ymax1], [xmax1, ymin1]])
         new_bg = rotate_bound(new_bg, -angle, [])
 
+        # Our points are now a numpy array of floats but we want an array of integer coordinates
         pnts = np.around(pnts.astype(int)).tolist()
 
-        for i in range(len(pnts)):
-            pnts[i][0] -= int((new_bg.shape[1] - old_height)/2)
-            pnts[i][1] -= int((new_bg.shape[0] - old_width)/2)
-
         # We are left with an image with black borders of size old_width/2 because of the resizing, so lets grab the
-        #   middle of the image to crop the black off
+        #   middle of the image to crop the black off, but first we need to apply this change to the coordinates
+        for i in range(len(pnts)):
+            pnts[i][0] -= int((new_bg.shape[1] - old_height) / 2)
+            pnts[i][1] -= int((new_bg.shape[0] - old_width) / 2)
+        # Now apply change to image
         new_bg = new_bg[int((new_bg.shape[0] - old_width)/2):int((new_bg.shape[0] + old_width)/2),
                         int((new_bg.shape[1] - old_height)/2):int((new_bg.shape[1] + old_height)/2)]
 
-        xmin0 = min(pnts[i][0] for i in range(4))
-        ymin0 = min(pnts[i][1] for i in range(4))
-        xmax0 = max(pnts[i][0] for i in range(4))
-        ymax0 = max(pnts[i][1] for i in range(4))
 
-        xmin1 = min(pnts[i][0] for i in range(4, 8))
-        ymin1 = min(pnts[i][1] for i in range(4, 8))
-        xmax1 = max(pnts[i][0] for i in range(4, 8))
-        ymax1 = max(pnts[i][1] for i in range(4, 8))
+        xmin0 = int(min(pnts[i][0] for i in range(4)) * 2 / REDUCE)
+        ymin0 = int(min(pnts[i][1] for i in range(4)) * 2 / REDUCE)
+        xmax0 = int(max(pnts[i][0] for i in range(4)) * 2 / REDUCE)
+        ymax0 = int(max(pnts[i][1] for i in range(4)) * 2 / REDUCE)
 
-        cv2.circle(new_bg, (xmin0, ymin0), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmin0, ymax0), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmax0, ymin0), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmax0, ymax0), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmin1, ymin1), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmin1, ymax1), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmax1, ymin1), 5, (255, 0, 255), -1)
-        cv2.circle(new_bg, (xmax1, ymax1), 5, (255, 0, 255), -1)
+        xmin1 = int(min(pnts[i][0] for i in range(4, 8)) * 2 / REDUCE)
+        ymin1 = int(min(pnts[i][1] for i in range(4, 8)) * 2 / REDUCE)
+        xmax1 = int(max(pnts[i][0] for i in range(4, 8)) * 2 / REDUCE)
+        ymax1 = int(max(pnts[i][1] for i in range(4, 8)) * 2 / REDUCE)
+
+
         new_bg = cv2.resize(new_bg, (int(new_bg.shape[1] * 2 / REDUCE), int(new_bg.shape[0] * 2 / REDUCE)))
+
+        cv2.circle(new_bg, (xmin0, ymin0), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmin0, ymax0), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax0, ymin0), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax0, ymax0), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmin1, ymin1), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmin1, ymax1), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax1, ymin1), 2, (255, 0, 255), -1)
+        cv2.circle(new_bg, (xmax1, ymax1), 2, (255, 0, 255), -1)
 
         cv2.imshow("Single Scene", new_bg)
         cv2.waitKey(0)
@@ -96,14 +106,6 @@ class Scene:
 
         card1, card1_name = self.card_images.get_random()
         card2, card2_name = self.card_images.get_random()
-
-        brightness1 = random.randint(-50, 50)
-        contrast1 = random.randint(-50, 50)
-        brightness2 = random.randint(-50, 50)
-        contrast2 = random.randint(-50, 50)
-
-        card1 = increase_brightness(card1, contrast1, brightness1)
-        card2 = increase_brightness(card2, contrast2, brightness2)
 
         angle = random.randint(0, 360)
 
@@ -144,14 +146,6 @@ def place_card(img, bg, cords):
     # Fill the bg rectangle created by the x,y coordinates with the img
     bg[y_card:y_card+img.shape[0], x_card:x_card+img.shape[1]] = img
     return bg, (x_card, y_card)
-
-
-def increase_brightness(img, contrast=0, brightness=0):
-    img = np.int16(img)
-    img = img * (contrast / 127 + 1) - contrast + brightness
-    img = np.clip(img, 0, 255)
-    img = np.uint8(img)
-    return img
 
 
 def main():

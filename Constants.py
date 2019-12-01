@@ -23,7 +23,7 @@ TESTING_EXTRACT = False
 EXPORT_EXTRACT = False
 
 # cardName has the format {suit}{value}, where a 10 has a value of 0 and ace has a value of A
-cardName = "SA"
+cardName = "C22"
 
 # The image size is divided by reduce when displayed
 REDUCE = 5
@@ -42,3 +42,7 @@ EXPORT = False
 ALL_CARDS = True
 # Have the final image horizontal (height less than width)
 HORIZONTAL = False
+
+
+
+

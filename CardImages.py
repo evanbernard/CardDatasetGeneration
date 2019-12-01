@@ -11,10 +11,24 @@ class Cards:
     def get_random(self, display=False):
         card_name = random.choice(list(self.images.keys()))
         card = self.images[card_name]
+
+        # Randomize the brightness and contrast of the random card
+        brightness = random.randint(-100, 100)
+        contrast = random.randint(-100, 100)
+        card = increase_brightness(card, contrast, brightness)
+
         if display:
             cv2.imshow("Random Card", card)
             cv2.waitKey(0)
         return card, card_name
+
+
+def increase_brightness(img, contrast=0, brightness=0):
+    img = np.int16(img)
+    img = img * (contrast / 127 + 1) - contrast + brightness
+    img = np.clip(img, 0, 255)
+    img = np.uint8(img)
+    return img
 
 
 # create_pickle() creates a pickle file of a dictionary with keys being the card name {SUIT}{VALUE} and the value is

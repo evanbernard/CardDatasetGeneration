@@ -1,5 +1,4 @@
 from Constants import *
-#from XMLParser import find_boxes
 
 
 def main():
@@ -10,8 +9,8 @@ def main():
     width, height = int(img_copy.shape[1] / REDUCE), int(img_copy.shape[0] / REDUCE)
     # c is the largest area contour in the image
     c = find_largest_contour(img)
-    # find the minimum bounding rectangle for the biggest contour
 
+    # find the minimum bounding rectangle for the biggest contour
     rect = cv2.minAreaRect(c)
     box = cv2.boxPoints(rect)
     box = np.int0(box)
@@ -53,12 +52,6 @@ def main():
 
     # We want the final size to be 300x420 so each card is consistent
     result = cv2.resize(result, IM_SIZE)
-
-    #bounding = find_boxes(cardName)
-    #cv2.circle(result, (bounding[0]['xmin'], bounding[0]['ymin']), 2, (255, 0, 255), -1)
-    #cv2.circle(result, (bounding[0]['xmax'], bounding[0]['ymax']), 2, (255, 0, 255), -1)
-
-
 
     if SHOW_DETAILS:
         cv2.imshow("Original", orig)
@@ -184,7 +177,7 @@ if __name__ == "__main__":
         for im in os.listdir(imFolder):
             # This assumes the name of the cards are in the format {suit}{value}
             #   and that 10 is treated as 0 (so all card names are exactly 2 characters long)
-            cardName = im[:2]
+            cardName = im[:len(im)-len(imExtension)]
             main()
     else:
         main()

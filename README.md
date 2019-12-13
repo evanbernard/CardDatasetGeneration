@@ -40,4 +40,14 @@ CardImages.py and BackgroundImages.py are used to save and load pickle files. Fo
 XMLParser.py is just a simple parser to grab the label coordinates of the cropped images. You can feed it the name of the image you need the coordinates for and it returns an array of arrays, each of the form [xmin, xmax, ymin, ymax]
 
 ### Scene Generation
-SceneGeneration.py is the script that brings all the pieces together. You create a new instance of Scene and then call scene.generate_scene(n) where n is the number of images you want to place on the background, and should be kept to 6 or less to avoid accuracy issues.
+SceneGeneration.py is the script that brings all the pieces together. You create a new instance of Scene and then call scene.generate_scene(n) where n is the number of images you want to place on the background, and should be kept to 6 or less to avoid accuracy issues. An example scene with n = 6 without displaying the labels:
+
+
+![Scene No Labels](https://github.com/evanbernard/CardDatasetGeneration/blob/master/SceneExamples/noLabels.jpg)
+
+An example scene with n = 6 displaying the labels:
+
+
+![Scene With Labels](https://github.com/evanbernard/CardDatasetGeneration/blob/master/SceneExamples/withLabels.jpg)
+
+If more than a third of a label is collectively covered by other images, then that label is not added to the final list of labels, as you can see by both of the 3 of spades labels showing but one of the 10 of spades label isn't. This is done to prevent a label being incorrect. Also if any part of the label is off the screen then it isn't added either.

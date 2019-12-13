@@ -6,5 +6,5 @@ __pycache__/
 Lib/
 *.cfg
 Scripts/
-Cards/
-CroppedCards/
+Images/
+CroppedImages/

@@ -1,7 +1,7 @@
 from Constants import *
 
 
-# The Cards class is a class containing the dictionary of card names and cropped images we have in a pickle file
+# The Images class is a class containing the dictionary of card names and cropped images we have in a pickle file
 # This class is used for grabbing (a) random card(s) and combining it with random background image
 class Cards:
     def __init__(self):

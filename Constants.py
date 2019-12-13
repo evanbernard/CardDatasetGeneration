@@ -7,9 +7,9 @@ import pickle
 from glob import glob
 import random
 
-imFolder = "Cards/"
+imFolder = "Images/"
 imExtension = ".jpg"
-cardFolder = "CroppedCards/"
+cardFolder = "CroppedImages/"
 
 bgLocation = "Z:\\ML_Images\\Background_Dataset\\Images\\"
 bgPickleLoc = "Z:\\ML_Images\\Background_Dataset\\BGPickle"

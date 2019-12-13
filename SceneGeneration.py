@@ -1,7 +1,7 @@
 from Constants import *
 from BackgroundImages import Backgrounds
 from CardImages import Cards
-from CardExtractor import rotate_bound
+from ImageExtractor import rotate_bound
 from XMLParser import find_boxes
 from Settings import REDUCE
 
@@ -147,8 +147,7 @@ def place_card(img, bg):
 
 # intersecting_area will take in two randomly rotated shapes and output the area that is intersecting both shapes.
 #   For this implementation we only will feed it rectangles but it will work on any 2 shapes. It will sweep from
-#   left to right, calculating the number of pixels in both shapes for each column of pixels.
-#   last column will be the column number that has the maximum x value out of rect1 and rect2
+#   left to right, calculating the number of pixels in both shapes for each column of pixels
 def intersecting_area(rect1, rect2):
     # rect1 is of the form [p1, p2, p3, p4] where each p is [x, y]
     # rect2 is of the form [xmin, xmax, ymin, ymax]

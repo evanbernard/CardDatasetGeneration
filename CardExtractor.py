@@ -1,8 +1,9 @@
 from Constants import *
+from Settings import *
 
 
 def main():
-    img = cv2.imread(imFolder + "\\" + cardName + imExtension)
+    img = cv2.imread(imFolder + "\\" + CARD_NAME + imExtension)
     # img_copy is the image we will be drawing contours on
     img_copy = img.copy()
     # width and height is the size we want our threshold to be if we show it
@@ -62,8 +63,8 @@ def main():
         cv2.waitKey(0)
 
     if EXPORT:
-        cv2.imwrite(cardFolder + "\\" + cardName + imExtension, result)
-        print("Added cropped file " + cardName + imExtension + " to the " + cardFolder + " folder.")
+        cv2.imwrite(cardFolder + "\\" + CARD_NAME + imExtension, result)
+        print("Added cropped file " + CARD_NAME + imExtension + " to the " + cardFolder + " folder.")
 
 
 # crop_image(img_copy, p1, p2) takes an image and two points and returns the image found between p1 and p2
@@ -177,7 +178,7 @@ if __name__ == "__main__":
         for im in os.listdir(imFolder):
             # This assumes the name of the cards are in the format {suit}{value}
             #   and that 10 is treated as 0 (so all card names are exactly 2 characters long)
-            cardName = im[:len(im)-len(imExtension)]
+            CARD_NAME = im[:len(im)-len(imExtension)]
             main()
     else:
         main()

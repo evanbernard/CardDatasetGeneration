@@ -120,6 +120,7 @@ class Scene:
         new_bg = cv2.resize(new_bg, (int(new_bg.shape[1] * 2 / REDUCE), int(new_bg.shape[0] * 2 / REDUCE)))
         self.final_boxes = exposed_labels(self.final_boxes, card_bounds_dict, new_bg.shape[1], new_bg.shape[0])
 
+
         for key in self.final_boxes:
             for i in range(2):
                 if self.final_boxes[key][i]:

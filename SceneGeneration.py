@@ -4,17 +4,25 @@ from CardImages import Cards
 from ImageExtractor import rotate_bound
 from XMLParser import find_boxes
 from Settings import REDUCE
-
+from os import system, name
 
 class Scene:
-    def __init__(self):
+    def __init__(self, display=True, train=True):
         self.bg_images = Backgrounds()
         self.card_images = Cards()
+        self.im_num = 1
+        if train:
+            self.train_or_test = 'train'
+        else:
+            self.train_or_test = 'test'
+        self.display = display
         # final_boxes is a dictionary full of each card in the image, the keys are the image names
         #   and the values are of the form [[xmin0, xmax0, ymin0, ymax0][xmin1, xmax1, ymin1, ymax1]]
         #   we need two sets because each set represents the box around the card corner with the info on it,
         #   and there are at most 2 of those we need to keep track of
         self.final_boxes = {}
+        self.path_to_im = os.getcwd() + '\\' + self.train_or_test
+        self.actual_path = ''
 
     def create_scene(self, num_cards):
         self.final_boxes = {}
@@ -120,16 +128,20 @@ class Scene:
         new_bg = cv2.resize(new_bg, (int(new_bg.shape[1] * 2 / REDUCE), int(new_bg.shape[0] * 2 / REDUCE)))
         self.final_boxes = exposed_labels(self.final_boxes, card_bounds_dict, new_bg.shape[1], new_bg.shape[0])
 
+        # UNCOMMENT THIS IF YOU WANT TO SEE THE LABELS, BUT THE TRAINING DATA SHOULDN'T SHOW THE LABELS, THIS IS JUST
+        #   FOR MAKING SURE THE LABELS ARE CORRECT WHEN I WROTE THIS
+        # for key in self.final_boxes:
+            # for i in range(2):
+                # if self.final_boxes[key][i]:
+                    # cv2.rectangle(new_bg, (self.final_boxes[key][i][0], self.final_boxes[key][i][3]),
+                                          # (self.final_boxes[key][i][1], self.final_boxes[key][i][2]), (255, 0, 0), 1)
 
-        for key in self.final_boxes:
-            for i in range(2):
-                if self.final_boxes[key][i]:
-                    cv2.rectangle(new_bg, (self.final_boxes[key][i][0], self.final_boxes[key][i][3]),
-                                          (self.final_boxes[key][i][1], self.final_boxes[key][i][2]), (255, 0, 0), 1)
-
-        cv2.imshow("Scene", new_bg)
-        print(self.final_boxes)
-        cv2.waitKey(0)
+        if self.display:
+            cv2.imshow("Scene", new_bg)
+            cv2.waitKey(0)
+        self.actual_path = self.path_to_im + '\\' + str(self.im_num) + '.jpg'
+        cv2.imwrite(self.actual_path, new_bg)
+        self.im_num += 1
 
 
 # Places the img onto the bigger image bg, in a random x,y coordinate
@@ -263,10 +275,63 @@ def exposed_labels(labels, card_bounds, width, height):
     return labels
 
 
+def write_to_files(file_name, boxes, path):
+    string_boxes = ''
+    with open(file_name, 'a') as file:
+        for i in boxes:
+            # determines which number classifier the box is for, ie. H2 corresponds to classifier 0
+            # we store the number classifier as classified_line
+            line_num = 0
+            with open('classifiers.txt', 'r') as classifiers:
+                for line in classifiers:
+                    line = line.rstrip()  # removes /n at the end of the line
+                    if i == line:
+                        classified_line = line_num
+                        break
+                    line_num += 1
+
+            # create a string in the format xmin,ymin,xmax,ymax,classifier_num xmin,ymin.... which will be how
+            #   the yolov3 implementation knows where the bounding boxes
+            for k in range(len(boxes[i])):
+                if boxes[i][k]:
+                    string_boxes = string_boxes + ' ' + str(boxes[i][k][0]) + ',' + str(boxes[i][k][2]) + ',' + \
+                                   str(boxes[i][k][1]) + ',' + str(boxes[i][k][3]) + ',' + \
+                                   str(classified_line)
+
+        file.write(path + string_boxes + '\n')
+        file.close()
+
+
+def generate_images(new_scene, train=True, num=0):
+    for i in range(num):
+        num_cards = random.randint(1, 6)
+        new_scene.create_scene(num_cards)
+        boxes = new_scene.final_boxes
+        path = new_scene.actual_path
+        print('\n')
+        if train:
+            print('Training Data: ' + str(round((i / num) * 100, 3)) + '%')
+            print('Testing Data : 0.00%')
+            write_to_files('CLASS_train.txt', boxes, path)
+        else:
+            print('Training Data: 100.00%')
+            print('Testing Data : ' + str(round((i / num) * 100, 3)) + '%')
+            write_to_files('CLASS_test.txt', boxes, path)
+
+    print('\n')
+    if train:
+        print('Training Data: 100.00%')
+        print('Testing Data : 0.00%')
+    else:
+        print('Training Data: 100.00%')
+        print('Testing Data : 100.00%')
+
+
 def main():
-    new_scene = Scene()
-    while True:
-        new_scene.create_scene(6)
+    train_scene = Scene(display=False, train=True)
+    generate_images(train_scene, train=True, num=20000)
+    test_scene = Scene(display=False, train=False)
+    generate_images(test_scene, train=False, num=2000)
 
 
 if __name__ == "__main__":

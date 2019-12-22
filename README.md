@@ -48,7 +48,11 @@ To run this script, you need to have the following:
 * An xml file for each cropped image containing the label of the important parts of the image (in the case of cards the xml files contain the bounding boxes for the two identifying corners of the cards). The xml files should be named {classifier_name}.xml and should be in the croppedImages folder.
 
 ### What Does It Do?
-SceneGeneration.py is the script that brings all the pieces together. You create a new instance of Scene and then call generate_images(scene, train, num). This will create num many images, each with a random number of cards (between 1 and 6) on each image. The number of cards is kept to less than 7 becuase at 7 cards, the rotation of the label coordinates with rounding may slightly offset the position of the labels. The parameter train is a boolean and it's what determines where the images are saved. If train = True, then the images will be stored in the train folder, and they'll be stored in the test folder otherwise. You should call generate_images twice, once with train = True and once with train = False, typically the number of testing images is 10% of the number of training images. An example scene with n = 6 without displaying the labels:
+SceneGeneration.py is the script that brings all the pieces together. You create a new instance of Scene and then call
+```Python
+generate_images(scene, train, num)
+```
+This will create num many images, each with a random number of cards (between 1 and 6) on each image. The number of cards is kept to less than 7 becuase at 7 cards, the rotation of the label coordinates with rounding may slightly offset the position of the labels. The parameter train is a boolean and it's what determines where the images are saved. If train = True, then the images will be stored in the train folder, and they'll be stored in the test folder otherwise. You should call generate_images twice, once with train = True and once with train = False, typically the number of testing images is 10% of the number of training images. An example scene with n = 6 without displaying the labels:
 
 
 ![Scene No Labels](https://github.com/evanbernard/CardDatasetGeneration/blob/master/SceneExamples/noLabels.jpg)

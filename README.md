@@ -13,6 +13,7 @@ imutils==0.5.3
 numpy==1.17.4
 opencv-python==4.1.2.30
 pickle-mixin==1.0.2
+tqdm==4.41.0
 ```
 You'll need to place your base images in the Images folder,  an example of a base image for the card dataset can be seen here:
 
@@ -47,14 +48,17 @@ To run this script, you need to have the following:
   * One containing a dictionary, with the keys being the name of the image, and the values being the actual image of the card (these cards will be randomly placed onto the randomly chosen background image, so the images should be cropped, which ImageExtractor.py does automatically for you, and the contents of the pickle file are retrieved by calling Cards())
 * An xml file for each cropped image containing the label of the important parts of the image (in the case of cards the xml files contain the bounding boxes for the two identifying corners of the cards). The xml files should be named {classifier_name}.xml and should be in the croppedImages folder.
 
+The pickle files can be created by running create_pickle in CardImages.py and BackgroundImages.py, then instantiating Cards() and Backgrounds() later on.
 ### What Does It Do?
 SceneGeneration.py is the script that brings all the pieces together. You create a new instance of Scene using
 ```Python
-new_scene = Scene(display=False, folder='train')
+card_pickle = Cards()
+bg_pickle = Backgrounds()
+train_scene = Scene(display=False, folder='train', card_pickle=card_pickle, bg_pickle=bg_pickle)
 ```
 where folder is where the images will be saved, and what the name of the text file of image info will be called. To actually generate the images, you call
 ```Python
-generate_images(new_scene, num=10000)
+generate_images(train_scene, num=20000)
 ```
 This will create num many images, each with a random number of cards (between 1 and 6) on each image. The number of cards is kept to less than 7 becuase at 7 cards, the rotation of the label coordinates with rounding may slightly offset the position of the labels. Typically you'll need to instantiate Scene twice, one with the folder being 'train' and one with 'test'. Then call generate_images on both scenes. The test folder generally should have 10% of the number of images the train folder has. An example scene with n = 6 without displaying the labels:
 

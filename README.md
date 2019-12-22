@@ -54,7 +54,7 @@ new_scene = Scene(display=False, folder='train')
 ```
 where folder is where the images will be saved, and what the name of the text file of image info will be called. To actually generate the images, you call
 ```Python
-generate_images(scene, num=10000)
+generate_images(new_scene, num=10000)
 ```
 This will create num many images, each with a random number of cards (between 1 and 6) on each image. The number of cards is kept to less than 7 becuase at 7 cards, the rotation of the label coordinates with rounding may slightly offset the position of the labels. Typically you'll need to instantiate Scene twice, one with the folder being 'train' and one with 'test'. Then call generate_images on both scenes. The test folder generally should have 10% of the number of images the train folder has. An example scene with n = 6 without displaying the labels:
 

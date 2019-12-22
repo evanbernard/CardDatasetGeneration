@@ -5,6 +5,7 @@ from Constants import *
 # This class is used for grabbing a random background and combining it with (a) random card(s)
 class Backgrounds:
     def __init__(self):
+        print("Unpacking the pickle file for background images ...")
         self.images = pickle.load(open(bgPickleLoc, 'rb'))
         self.nb_images = len(self.images)
 

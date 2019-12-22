@@ -4,24 +4,24 @@ from CardImages import Cards
 from ImageExtractor import rotate_bound
 from XMLParser import find_boxes
 from Settings import REDUCE
-from os import system, name
+from os import path
+
 
 class Scene:
-    def __init__(self, display=True, train=True):
+    def __init__(self, display=True, folder='train'):
         self.bg_images = Backgrounds()
         self.card_images = Cards()
         self.im_num = 1
-        if train:
-            self.train_or_test = 'train'
-        else:
-            self.train_or_test = 'test'
+        self.folder = folder
         self.display = display
         # final_boxes is a dictionary full of each card in the image, the keys are the image names
         #   and the values are of the form [[xmin0, xmax0, ymin0, ymax0][xmin1, xmax1, ymin1, ymax1]]
         #   we need two sets because each set represents the box around the card corner with the info on it,
         #   and there are at most 2 of those we need to keep track of
         self.final_boxes = {}
-        self.path_to_im = os.getcwd() + '\\' + self.train_or_test
+        self.path_to_im = os.getcwd() + '\\' + self.folder
+        if not path.exists(self.path_to_im):
+            os.mkdir(self.path_to_im)
         self.actual_path = ''
 
     def create_scene(self, num_cards):
@@ -88,14 +88,12 @@ class Scene:
             points = np.around(points.astype(int)).tolist()
             ncard_bounds = np.around(ncard_bounds.astype(int)).tolist()
 
-            # TODO FIGURE OUT HOW THIS MAKES SENSE???? WE'RE SUBTRACTING THE HEIGHT FROM THE WIDTH AND VICE VERSA
-            #  AND IT DOESN'T WORK OTHERWISE??? bg.shape[0] is the height but when I wrote it I thought it was width??
             # ----------------------------------------------------------------------------------------------------------
             # We are left with an image with black borders of size old_width/2 because of the resizing, so lets grab the
             #   middle of the image to crop the black off, but first we need to apply this change to the coordinates
-            for i in range(len(points)):
-                points[i][0] -= int((new_bg.shape[1] - old_height) / 2)
-                points[i][1] -= int((new_bg.shape[0] - old_width) / 2)
+            for k in range(len(points)):
+                points[k][0] -= int((new_bg.shape[1] - old_height) / 2)
+                points[k][1] -= int((new_bg.shape[0] - old_width) / 2)
             for j in range(len(ncard_bounds)):
                 ncard_bounds[j][0] -= int((new_bg.shape[1] - old_height) / 2)
                 ncard_bounds[j][1] -= int((new_bg.shape[0] - old_width) / 2)
@@ -191,7 +189,6 @@ def intersecting_area(rect1, rect2):
         for y in range(rect2[2], rect2[3], 2):
             if point_inside_polygon(x, y, rect1):
                 overlap_area += 4
-    # actual_area = (rect2[1] - rect2[0])*(rect2[3] - rect2[2])
     return overlap_area
 
 
@@ -236,7 +233,6 @@ def exposed_labels(labels, card_bounds, width, height):
     new_bounds = card_bounds
     # labels is a dictionary so we want to iterate through each label
     for key in labels:
-        card = card_bounds[key]
         i = 0
         # since we're grabbing the label from the card called key, we don't want to check for overlapping between the
         #   label and the card that the label is for, since obviously it will think the label is covered by the card
@@ -275,12 +271,18 @@ def exposed_labels(labels, card_bounds, width, height):
     return labels
 
 
+# write_to_files(file_name, boxes, path) will append a line to the file_name, following the format of
+#   DRIVE:/path/to/image/n.jpg xmin ymin xmax ymax classifier_num ...
+#   where boxes is a dictionary in the format of {cardname: [[label1][label2]], ...} and the labels are in the format
+#   [xmin, xmax, ymin, ymax] and may be empty. classifier_num is the line in which the card name appears in
+#   classifiers.txt
 def write_to_files(file_name, boxes, path):
     string_boxes = ''
-    with open(file_name, 'a') as file:
+    # if the file already exists, append to it, otherwise create it and append to it
+    with open(file_name, 'a+') as file:
         for i in boxes:
-            # determines which number classifier the box is for, ie. H2 corresponds to classifier 0
-            # we store the number classifier as classified_line
+            # determines which number classifier the box is for, ie. H2 corresponds to classifier 0 since H2 is in the
+            #   first line of classifiers.txt. We store this number in classified_line
             line_num = 0
             with open('classifiers.txt', 'r') as classifiers:
                 for line in classifiers:
@@ -291,47 +293,51 @@ def write_to_files(file_name, boxes, path):
                     line_num += 1
 
             # create a string in the format xmin,ymin,xmax,ymax,classifier_num xmin,ymin.... which will be how
-            #   the yolov3 implementation knows where the bounding boxes
+            #   the yolov3 implementation knows where the bounding boxes are
             for k in range(len(boxes[i])):
                 if boxes[i][k]:
                     string_boxes = string_boxes + ' ' + str(boxes[i][k][0]) + ',' + str(boxes[i][k][2]) + ',' + \
                                    str(boxes[i][k][1]) + ',' + str(boxes[i][k][3]) + ',' + \
                                    str(classified_line)
-
+        # finally, we have the format we need so we just append the desired results to the file and close it
         file.write(path + string_boxes + '\n')
         file.close()
 
 
-def generate_images(new_scene, train=True, num=0):
+# generate_images(new_scene, num) is the main function for this script, you give it an instance of the class Scene
+#   called new_scene, and the number of images you want to generate. The location of the saved images depends on how
+#   Scene was generated, if train=True in new_scene, then the images will be saved in 'train' and 'test' otherwise
+def generate_images(new_scene, num=0):
+    folder = new_scene.folder
     for i in range(num):
+        # create a random image with a random number of cards on it
         num_cards = random.randint(1, 6)
         new_scene.create_scene(num_cards)
+        # grab the dictionary of labels called boxes
         boxes = new_scene.final_boxes
-        path = new_scene.actual_path
-        print('\n')
-        if train:
-            print('Training Data: ' + str(round((i / num) * 100, 3)) + '%')
-            print('Testing Data : 0.00%')
-            write_to_files('CLASS_train.txt', boxes, path)
-        else:
-            print('Training Data: 100.00%')
-            print('Testing Data : ' + str(round((i / num) * 100, 3)) + '%')
-            write_to_files('CLASS_test.txt', boxes, path)
-
-    print('\n')
-    if train:
-        print('Training Data: 100.00%')
-        print('Testing Data : 0.00%')
-    else:
-        print('Training Data: 100.00%')
-        print('Testing Data : 100.00%')
+        # grab the path of the save location of the image
+        pathh = new_scene.actual_path
+        # the file we write the info of the images in is either called 'CLASS_train.txt' or 'CLASS_test.txt'
+        file = 'CLASS_' + folder + '.txt'
+        # we have the new generated image saved in path, so we need to append the CLASS_{train, test}.txt file with
+        #   the proper info related to this file
+        write_to_files(file, boxes, pathh)
+        # print the status of the function, since it may take a while depending on the number of images we want
+        print(str(round((i / num) * 100, 3)) + '%')
+    print("100.00%")
 
 
 def main():
-    train_scene = Scene(display=False, train=True)
-    generate_images(train_scene, train=True, num=20000)
-    test_scene = Scene(display=False, train=False)
-    generate_images(test_scene, train=False, num=2000)
+    # To use this script, create a scene, then call generate_images() on that scene. Create a new scene for each folder
+    #   of images you want to create. Typically, you'll want a train folder and a test folder, where the test folder
+    #   has 10% of the number of images that the train folder has
+    # NOTE: if you have train and test folders full of images and you want to test the code without having to recreate
+    #   all those images, just set folder to something else when instantiating Scene and it will create a new folder
+    #   and text file for that name when you call generate_images on that scene
+    train_scene = Scene(display=False, folder='train')
+    generate_images(train_scene, num=20000)
+    test_scene = Scene(display=True, folder='test')
+    generate_images(test_scene, num=2000)
 
 
 if __name__ == "__main__":

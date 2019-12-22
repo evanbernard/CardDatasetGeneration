@@ -5,12 +5,14 @@ from ImageExtractor import rotate_bound
 from XMLParser import find_boxes
 from Settings import REDUCE
 from os import path
+import time
+from tqdm import tqdm
 
 
 class Scene:
-    def __init__(self, display=True, folder='train'):
-        self.bg_images = Backgrounds()
-        self.card_images = Cards()
+    def __init__(self, display=False, folder='train', card_pickle=None, bg_pickle=None):
+        self.bg_images = bg_pickle
+        self.card_images = card_pickle
         self.im_num = 1
         self.folder = folder
         self.display = display
@@ -309,7 +311,9 @@ def write_to_files(file_name, boxes, path):
 #   Scene was generated, if train=True in new_scene, then the images will be saved in 'train' and 'test' otherwise
 def generate_images(new_scene, num=0):
     folder = new_scene.folder
-    for i in range(num):
+    print('Generating ' + folder + ' Images:')
+    # use the tqdm progress bar
+    for i in tqdm(range(num)):
         # create a random image with a random number of cards on it
         num_cards = random.randint(1, 6)
         new_scene.create_scene(num_cards)
@@ -322,9 +326,6 @@ def generate_images(new_scene, num=0):
         # we have the new generated image saved in path, so we need to append the CLASS_{train, test}.txt file with
         #   the proper info related to this file
         write_to_files(file, boxes, pathh)
-        # print the status of the function, since it may take a while depending on the number of images we want
-        print(str(round((i / num) * 100, 3)) + '%')
-    print("100.00%")
 
 
 def main():
@@ -334,9 +335,14 @@ def main():
     # NOTE: if you have train and test folders full of images and you want to test the code without having to recreate
     #   all those images, just set folder to something else when instantiating Scene and it will create a new folder
     #   and text file for that name when you call generate_images on that scene
-    train_scene = Scene(display=False, folder='train')
+    # instantiate card and background class, where we have access to the pickle files and the function
+    #   increase_brightness which randomly changes the brightness and contrast of the cards
+    card_pickle = Cards()
+    bg_pickle = Backgrounds()
+
+    train_scene = Scene(display=False, folder='train', card_pickle=card_pickle, bg_pickle=bg_pickle)
     generate_images(train_scene, num=20000)
-    test_scene = Scene(display=True, folder='test')
+    test_scene = Scene(display=False, folder='test', card_pickle=card_pickle, bg_pickle=bg_pickle)
     generate_images(test_scene, num=2000)
 
 
